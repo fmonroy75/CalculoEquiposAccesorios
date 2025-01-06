@@ -1,0 +1,117 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Más campos y lógica para cálculos -->
+
+    <!-- Peso -->
+
+    <!-- Distancia al CoG (d1) -->
+    <TextView
+        android:id="@+id/tvgg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Capacidad de Grúa y Gancho"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Distancia al CoG (d2) -->
+
+    <EditText
+        android:id="@+id/etCapacidadNominal_gg1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="224dp"
+        android:hint="Capacidad nominal de la grúa (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Longitud de los tirantes (L1) -->
+
+    <!-- Longitud de los tirantes (L2) -->
+
+    <!-- Altura -->
+
+
+    <!-- Botón Calcular -->
+
+
+    <!-- Resultados -->
+
+    <EditText
+        android:id="@+id/etPeso_gg1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:hint="Peso de la carga (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCapacidadNominal_gg1" />
+
+    <EditText
+        android:id="@+id/etRadio_gg1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:hint="Radio de trabajo (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPeso_gg1" />
+
+    <Button
+        android:id="@+id/btnCalcular_gg1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRadio_gg1" />
+
+    <TextView
+        android:id="@+id/tvResultado_gg1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Resultados aparecerán aquí"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular_gg1" />
+
+    <TextView
+        android:id="@+id/tv_descrip_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Verificar si la grúa puede soportar la carga con base en su capacidad nominal y el radio de trabajo."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_formul_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Fórmula para el momento: 𝑀 = 𝐶 𝑎 𝑟 𝑔 𝑎 ⋅ 𝑅 𝑎 𝑑 𝑖 𝑜 M=Carga⋅Radio Donde  𝑀 M es el momento y debe ser menor o igual a la capacidad de la grúa."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvgg1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

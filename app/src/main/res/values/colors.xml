@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2196F3</color> <!-- Azul Material Design -->
+    <color name="gray">#9E9E9E</color> <!-- Gris para estados inactivos -->
+
+    <!-- Colores principales -->
+    <color name="primary">#6200EE</color> <!-- Un tono de púrpura -->
+    <color name="primary_variant">#3700B3</color> <!-- Variante más oscura del color principal -->
+    <color name="secondary">#03DAC6</color> <!-- Un tono de verde azulado -->
+    <color name="on_primary">#FFFFFF</color> <!-- Blanco para texto sobre el color principal -->
+    <color name="on_secondary">#000000</color> <!-- Negro para texto sobre el color secundario -->
+
+
+    <!-- Color de los íconos cuando no están seleccionados -->
+    <color name="icon_unselected">#9E9E9E</color> <!-- Gris claro -->
+
+    <!-- Color de los íconos cuando están seleccionados -->
+    <color name="icon_selected">#2196F3</color> <!-- Azul -->
+
+    <!-- Color del texto cuando no está seleccionado -->
+    <color name="text_unselected">#9E9E9E</color>
+
+    <!-- Color del texto cuando está seleccionado -->
+    <color name="text_selected">#2196F3</color>
+</resources>

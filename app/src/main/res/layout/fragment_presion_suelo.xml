@@ -1,0 +1,107 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Más campos y lógica para cálculos -->
+
+
+    <TextView
+        android:id="@+id/tvps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Cálculo de Presión en el Suelo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etPeso_ps"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:hint="Peso total (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etArea_ps"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:hint="Área de contacto (m2)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPeso_ps" />
+
+    <EditText
+        android:id="@+id/etCapacidad_ps"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Capacidad de carga del suelo (kPa)."
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etArea_ps" />
+
+   
+    <!-- Botón Calcular -->
+
+
+    <!-- Resultados -->
+
+    <Button
+        android:id="@+id/btnCalcular_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCapacidad_ps" />
+
+    <TextView
+        android:id="@+id/tvResultado_ps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Resultados aparecerán aquí"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular_ps" />
+
+    <TextView
+        android:id="@+id/tv_descrip_ps"
+        android:layout_width="404dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:text="Determinar si el suelo puede soportar la presión ejercida por la grúa o la carga."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_formul_ps"
+        android:layout_width="405dp"
+        android:layout_height="33dp"
+        android:text="Entradas: Peso total (kg). Área de contacto (m2). Capacidad de carga del suelo (𝑘𝑃)."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descrip_ps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

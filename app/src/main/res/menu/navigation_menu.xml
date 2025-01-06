@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_grua_gancho"
+        android:title="Capacidad de Grúa y Gancho" />
+    <item
+        android:id="@+id/nav_presion_suelo"
+        android:title="Cálculo de Presión en el Suelo" />
+    <item
+        android:id="@+id/nav_ganchos_grilletes"
+        android:title="Selección de Ganchos y Grilletes" />
+    <item
+        android:id="@+id/nav_punto_choque"
+        android:title="Calcular Punto de Choque" />
+</menu>
